@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #050505;
+  color: #e5e5e5;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* APP */
+.app {
+  width: 400px;
+}
+
+/* TITLE */
+h1 {
+  font-weight: 300;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+/* INPUT */
+input {
+  width: 100%;
+  padding: 12px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #333;
+  color: white;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+  border-color: white;
+}
+
+/* FILTERS */
+.filters {
+  margin: 20px 0;
+}
+
+.filters button {
+  background: none;
+  border: none;
+  color: #666;
+  margin-right: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filters button.active {
+  color: white;
+}
+
+.filters button:hover {
+  color: white;
+}
+
+/* TASK */
+li {
+  list-style: none;
+  padding: 12px 0;
+  border-bottom: 1px solid #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+li:hover {
+  transform: translateX(5px);
+}
+
+/* TEXT */
+.task-text {
+  flex: 1;
+  cursor: pointer;
+}
+
+/* DONE */
+li.done .task-text {
+  text-decoration: line-through;
+  color: #555;
+}
+
+/* DELETE */
+.delete {
+  color: #444;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.delete:hover {
+  color: white;
+}
+
+/* EDIT INPUT */
+.edit-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #333;
+  color: white;
+}
